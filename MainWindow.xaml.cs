@@ -30,7 +30,10 @@ namespace Editor
                 {
                     File.Create("File.txt");
                 }
-                Editor.Text = File.ReadAllText("File.txt");
+                else
+                {
+                    Editor.Text = File.ReadAllText("File.txt");
+                }
             }
             catch
             {
